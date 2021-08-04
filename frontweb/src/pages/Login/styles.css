@@ -1,0 +1,80 @@
+.banner-container {
+  display: none;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 298px;
+  height: 464px;
+  padding: 60px 17px 0 17px;
+}
+
+.login-card h1 {
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.login-submit {
+  margin-top: 54px;
+}
+
+@media (min-width: 576px) {
+  .login-card {
+    height: 573px;
+    width: 479px;
+    margin-top: 40px;
+    padding: 74px 44px 0 44px;
+  }
+
+  .login-submit button {
+    height: 65px;
+  }
+
+  .login-submit {
+    margin-top: 74px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  .banner-container {
+    display: block;
+    margin: 81px 0 0 97px;
+  }
+
+  .banner-container h1 {
+    font-size: 48px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+  }
+
+  .banner-container p {
+    font-size: 22px;
+    letter-spacing: -0.015em; 
+    color: #F2F2F2;
+    margin-top: 20px;
+  }
+
+  .banner-container svg {
+      margin-top: 50px;
+  }
+
+  .login-card {
+    margin: 38px 105px 0 0;
+  }
+}
