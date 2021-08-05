@@ -17,20 +17,6 @@
   margin-bottom: 18px;
 }
 
-.card-form {
-  padding: 20px 10px 0 10px;
-  margin-bottom: 20px;
-}
-
-.card-form input {
-  height: 50px;
-}
-
-.card-form button {
-  margin: 20px 0 20px 0;
-  max-width: 335px;
-}
-
 .name-container {
   display: flex;
   flex-direction: row;
@@ -76,8 +62,4 @@
     margin: 0 20px 30px 17px;
   }
 
-  .card-form {
-    padding: 24px 33px 0 17px;
-    margin-bottom: 20px;
-  }
 }

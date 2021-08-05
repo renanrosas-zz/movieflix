@@ -12,6 +12,10 @@ type LoginData = {
   username: string;
   password: string;
 };
+type FormData = {
+  text: string;
+  movieId: string;
+};
 
 export const requestBackendLogin = (loginData: LoginData) => {
   const headers = {
@@ -32,6 +36,24 @@ export const requestBackendLogin = (loginData: LoginData) => {
     headers,
   });
 };
+
+export const requestBackendReview = (formData: FormData) => {
+  const headers = {
+    'Content-Type': 'application/json',
+    Authorization: 'Bearer ' + getAuthData().access_token,
+  };
+
+  const data = JSON.stringify(formData);
+
+  return axios({
+    method: 'POST',
+    baseURL: BASE_URL,
+    url: '/reviews',
+    data,
+    headers,
+  });
+};
+
 
 export const requestBackend = (config: AxiosRequestConfig) => {
   const headers = config.withCredentials
@@ -67,7 +89,7 @@ axios.interceptors.response.use(
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
     if (error.response.status === 401) {
-      history.push('/');
+      history.push('/movies');
     }
     return Promise.reject(error);
   }

@@ -18,3 +18,16 @@
 .nav-login-logout {
   margin-right: 50px;
 }
+
+.nav-login-logout {
+  height: 30px;
+  width: 97px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nav-login-logout a {
+  font-weight: bold;
+}
