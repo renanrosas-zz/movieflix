@@ -7,5 +7,5 @@ export type Movie = {
   year: number;
   imgUrl: string;
   synopsis: string;
-  genres: Genre[];
+  genre: Genre;
 };

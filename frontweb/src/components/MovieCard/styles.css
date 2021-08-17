@@ -1,0 +1,30 @@
+.movie-card {
+    padding-top: 25px;
+  }
+  .movie-card-img img {
+    width: 100%;
+  }
+  
+  .movie-card-info {
+    padding-left: 15px;
+  }
+  
+  .movie-card-info h2 {
+    font-size: 20px;
+    letter-spacing: -0.015em;
+    color: #fff;
+    padding-top: 10px;
+  }
+  
+  .movie-card-info h4 {
+    font-size: 16px;
+    letter-spacing: -0.015em;
+    color: #ffc700;
+  }
+  
+  .movie-card-info p {
+    font-size: 14px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    padding-bottom: 50px;
+  }
